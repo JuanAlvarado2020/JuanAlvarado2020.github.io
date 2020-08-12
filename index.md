@@ -41,6 +41,18 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
   agent-id="c69ffa99-87b7-4f22-b07e-1680e6713c14"
   language-code="es"
 ></df-messenger>
+<div>Teachable Machine Image Model</div>
+<button type="button" onclick="init()">Start</button>
+<div id="webcam-container"></div>
+<div id="label-container"></div>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript">
+    // More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+    // the link to your model provided by Teachable Machine export panel
+    const URL = "{{URL}}";
 
     let model, webcam, labelContainer, maxPredictions;
 
